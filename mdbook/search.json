@@ -1,0 +1,338 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Markdown 指南",
+    "section": "",
+    "text": "Markdown 指南\n\n连享会主页\n课程\n视频\n资料\n\n \n\n主页 || 课程 || 视频 || 推文 || 资料",
+    "crumbs": [
+      "Markdown 指南"
+    ]
+  },
+  {
+    "objectID": "body/_home.html",
+    "href": "body/_home.html",
+    "title": "About",
+    "section": "",
+    "text": "连享会小课堂：在线视频课程\n连享会 由中山大学连玉君老师团队创办，定期分享各类实证分析经验，主要栏目如下：",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "body/_home.html#连享会小课堂在线视频课程",
+    "href": "body/_home.html#连享会小课堂在线视频课程",
+    "title": "About",
+    "section": "",
+    "text": "\\({\\color{red}{NEW}}\\) 连享会在线课堂：lianxh-class.cn\n\n\n连玉君，Stata 33 讲，观看量超过 100 万人次的 Stata 入门课\n连玉君，直击面板数据模型，2 小时，公开课\nStata 软件及计量基础, 五次课，Stata 入门必备\n因果推断：控制变量如何选？，2 小时, 9.9 元\n因果推断：反事实架构及主流计量方法, 2 小时, 9.9 元\n我的特斯拉-实证研究设计，2.4 小时\n连玉君，我的甲壳虫-论文精讲与重现，两次课，共 6 小时\n连玉君，动态面板数据模型，2.2 小时，理论+实操 ……",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "body/_home.html#资源分享",
+    "href": "body/_home.html#资源分享",
+    "title": "About",
+    "section": "资源分享",
+    "text": "资源分享\n\n详情：主页 - 资料分享\n\n\nData\n\nCSMAR-国泰安 | Wind-万德 | Resset-锐思\n常用数据库 | 人文社科数据库\n\n\n\n论文复现\n\n论文重现网站大全\n\n\nDiscover Mendeley Data\nICPSR Data\nHarvard Dataverse\nFind Economic Articles with Data\n\n包含 9000 多篇经济金融论文，可检索软件类型、期刊名称等。\n\nReplication in the social sciences\n\n\n\n推文\n\nStata 教程 | 资料 | 新命令 | 结果输出 | 绘图 | 数据处理 | 程序\n回归分析 | 面板数据 | 交乘项-调节 | IV-GMM | Logit | 空间计量\n因果推断 | DID | RDD | PSM | 合成控制 | 文本分析\nMarkdown | 工具软件 | 机器学习 | 其它\nPDF 合集",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "body/_home.html#联系我们",
+    "href": "body/_home.html#联系我们",
+    "title": "About",
+    "section": "联系我们",
+    "text": "联系我们\n\nE-mail： StataChina@163.com\n微信公众号： lianxh_cn (连享会)\n\n\n数字连享会\n截至 2024.12.18，连享会 共发布推文 1351 篇，累积阅读量 13,043,554 次。篇均阅读次数为 9654。连享会 知乎账号 回答了 1360 个经济、管理领域的问题，发布推文 1036 篇，累积阅读量为 58,564,198 次。\n\n\n欢迎赐稿\n\n推文风格：参见 分类推文。\n录用 2 篇 以上，即可 免费 获得一期 Stata 现场培训资格\n投稿信箱: StataChina@163.com / arlionn@163.com 。\n邮件标题：推文投稿-姓名：推文标题。",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "body/01-ex.html",
+    "href": "body/01-ex.html",
+    "title": "1  ggplot2 demo",
+    "section": "",
+    "text": "1.1 Air Quality\nFigure 1.1 further explores the impact of temperature on ozone level.\nCode\nlibrary(ggplot2)\n\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n\n\n\n\n\n\n\n\nFigure 1.1: Temperature and ozone level.",
+    "crumbs": [
+      "Markdown 基础",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>ggplot2 demo</span>"
+    ]
+  },
+  {
+    "objectID": "body/02-md-syntax.html",
+    "href": "body/02-md-syntax.html",
+    "title": "2  Markdown 基本语法",
+    "section": "",
+    "text": "2.1 标题\nhttps://quarto.org/docs/authoring/markdown-basics.html\nMarkdown 使用 # 符号表示标题。# 的数量代表标题的级别，从 1 级到 6 级。",
+    "crumbs": [
+      "Markdown 基础",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown 基本语法</span>"
+    ]
+  },
+  {
+    "objectID": "body/02-md-syntax.html#sec-md-title",
+    "href": "body/02-md-syntax.html#sec-md-title",
+    "title": "2  Markdown 基本语法",
+    "section": "",
+    "text": "# 一级标题\n## 二级标题\n## 三级标题\n……\n###### 六级标题",
+    "crumbs": [
+      "Markdown 基础",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown 基本语法</span>"
+    ]
+  },
+  {
+    "objectID": "body/02-md-syntax.html#sec-md-paragraph",
+    "href": "body/02-md-syntax.html#sec-md-paragraph",
+    "title": "2  Markdown 基本语法",
+    "section": "2.2 段落与换行",
+    "text": "2.2 段落与换行\n\n段落：段落之间需要空一行。\n段内换行：在行尾添加两个空格，或者使用 &lt;br&gt; 标签。\n\n这是第一段。\n\n这是第二段。  \n这是同一段的换行。\n需要说明的是，使用 Markdown 撰写的文档无需在在段首空两格。若需添加，可以采用 HTML 标记符 &emsp; (参见 ?sec-html-syntax)：\n&emsp;&emsp;多数情况下，md 文档主要通过网页形式发布。  \n因此，首行无需空两个字符。 …………………\n  多数情况下，md 文档主要通过网页形式发布。\n因此，首行无需空两个字符。 …………………",
+    "crumbs": [
+      "Markdown 基础",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown 基本语法</span>"
+    ]
+  },
+  {
+    "objectID": "body/02-md-syntax.html#sec-md-list",
+    "href": "body/02-md-syntax.html#sec-md-list",
+    "title": "2  Markdown 基本语法",
+    "section": "2.3 列表",
+    "text": "2.3 列表\nMarkdown 支持有序列表和无序列表。\n\n\n\n\n\n\nTip\n\n\n\n\n建议在正文文字与列表之间添加一个空行，以确保在多数编辑器中都能正常渲染。Quarto (参见 ?sec-quarto-intro) 对此有明确的格式要求。\n若在列表项之间加入空行 (仅需一个)，渲染后的列表行间距会增大，视觉效果更清晰；反之，生成的列表比较紧凑。\n\n\n\n\n2.3.1 无序列表\n使用 -、* 或 + 表示无序列表。二级列表首行缩进两个字符，以此类推。\n下面是一个二级列表：\n\n- 回归分析\n- 机器学习\n  - 随机森林\n下面是一个二级列表：\n\n回归分析\n机器学习\n\n随机森林\n\n\n\n\n2.3.2 有序列表\n使用数字加点表示有序列表。\n1. 第一项\n2. 第二项\n   1. 子项 1\n   1. 子项 2\n3. 第三项\n   - 子列表\n   - 子列表\n\n\n\n\n\n\nNote\n\n\n\n\n有序列表前的序号不必严格遵守 1. 2. 的顺序，可以写为 1. 1.，甚至是 1. 3. 2.\n二级子项或子列表前要保留三个空格。\n\n\n\n\n第一项\n第二项\n\n子项 1\n子项 2\n\n第三项\n\n子列表\n子列表",
+    "crumbs": [
+      "Markdown 基础",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown 基本语法</span>"
+    ]
+  },
+  {
+    "objectID": "body/02-md-syntax.html#sec-md-emphasis",
+    "href": "body/02-md-syntax.html#sec-md-emphasis",
+    "title": "2  Markdown 基本语法",
+    "section": "2.4 强调",
+    "text": "2.4 强调\n使用 * 或 _ 表示斜体，** 或 __ 表示粗体。\n*斜体* 或 _斜体_  \n**粗体** 或 __粗体__  \n***粗斜体*** 或 ___粗斜体___\n斜体 或 斜体\n粗体 或 粗体\n粗斜体 或 粗斜体\n\n\n\n\n\n\nNote\n\n\n\n\n用 * 或 ** 包围文字时，文字两侧不要加空格，否则在有些编辑器中无法渲染。\n在有些编辑器中，加粗符号两侧也要加空格，即 请 **加粗** 这些内容。",
+    "crumbs": [
+      "Markdown 基础",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown 基本语法</span>"
+    ]
+  },
+  {
+    "objectID": "body/02-md-syntax.html#sec-md-link-image",
+    "href": "body/02-md-syntax.html#sec-md-link-image",
+    "title": "2  Markdown 基本语法",
+    "section": "2.5 链接与图片",
+    "text": "2.5 链接与图片\n\n2.5.1 链接\n使用 [文本](URL) 表示链接。\n[Google](https://www.google.com)\n\n\n2.5.2 图片\n使用 ![替代文本](图片URL) 插入图片。如果是本地图片，可以使用相对路径。\n![Markdown Logo](images/markdown-logo.png)\n\n\n\n\n\n\nNote\n\n\n\n\n图片的文件名中不要包含空格和特殊字符。\n如果插入的是本地图片，请务必使用相对路径。\n设置图片尺寸和位置可以使用 HTML 标签：\n\n&lt;img style=\"width: 550px\" src=\"images/markdown-logo.png\"&gt;",
+    "crumbs": [
+      "Markdown 基础",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown 基本语法</span>"
+    ]
+  },
+  {
+    "objectID": "body/02-md-syntax.html#sec-md-code",
+    "href": "body/02-md-syntax.html#sec-md-code",
+    "title": "2  Markdown 基本语法",
+    "section": "2.6 代码",
+    "text": "2.6 代码\n\n2.6.1 行内代码\n使用 ` 包裹行内代码。\n这是 `行内代码` 示例。\n\n\n2.6.2 代码块\n使用  包裹代码块，并指定语言（可选）。\n```python\ndef hello():\n    print(\"Hello, Markdown!\")\n```",
+    "crumbs": [
+      "Markdown 基础",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown 基本语法</span>"
+    ]
+  },
+  {
+    "objectID": "body/02-md-syntax.html#sec-md-quote",
+    "href": "body/02-md-syntax.html#sec-md-quote",
+    "title": "2  Markdown 基本语法",
+    "section": "2.7 引用",
+    "text": "2.7 引用\n使用 &gt; 表示引用。\n&gt; 这是一个引用。\n&gt; 引用可以有多行。  \n&gt; 注意：多行引用时，每行末尾需加两个空格。",
+    "crumbs": [
+      "Markdown 基础",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown 基本语法</span>"
+    ]
+  },
+  {
+    "objectID": "body/02-md-syntax.html#sec-md-table",
+    "href": "body/02-md-syntax.html#sec-md-table",
+    "title": "2  Markdown 基本语法",
+    "section": "2.8 表格",
+    "text": "2.8 表格\n使用 | 和 - 创建表格。\n| 左对齐 | 居中 | Default | 右对齐 |\n|:------|:----:|---------|-------:|\n|  0.12 |  12  |    12   |    1.23|\n|  1.2  |  123 |   123   |   12.31|\n\n\n\n左对齐\n居中\nDefault\n右对齐\n\n\n\n\n0.12\n12\n12\n1.23\n\n\n1.2\n123\n123\n12.31\n\n\n\n合并单元格： Markdown 本身不支持合并单元格，但可以通过 HTML 实现。参考 HTML 表格教程。",
+    "crumbs": [
+      "Markdown 基础",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown 基本语法</span>"
+    ]
+  },
+  {
+    "objectID": "body/02-md-syntax.html#sec-md-hr",
+    "href": "body/02-md-syntax.html#sec-md-hr",
+    "title": "2  Markdown 基本语法",
+    "section": "2.9 分割线",
+    "text": "2.9 分割线\n使用 -、* 或 _ 创建分割线（至少三个符号）。\n---",
+    "crumbs": [
+      "Markdown 基础",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown 基本语法</span>"
+    ]
+  },
+  {
+    "objectID": "body/02-md-syntax.html#sec-md-comment",
+    "href": "body/02-md-syntax.html#sec-md-comment",
+    "title": "2  Markdown 基本语法",
+    "section": "2.10 注释",
+    "text": "2.10 注释\nMarkdown 本身不支持注释，但可以通过 HTML 注释实现。\n&lt;!-- 这是一个注释，不会显示在渲染结果中 --&gt;",
+    "crumbs": [
+      "Markdown 基础",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown 基本语法</span>"
+    ]
+  },
+  {
+    "objectID": "body/02-md-syntax.html#sec-md-escape",
+    "href": "body/02-md-syntax.html#sec-md-escape",
+    "title": "2  Markdown 基本语法",
+    "section": "2.11 转义字符",
+    "text": "2.11 转义字符\n如果需要显示特殊字符（如 #、* 等），可以使用反斜杠 \\ 进行转义。\n这是 \\*不是\\* 斜体。\n常见转义字符： - \\#：# - \\*：* - \\_：_ - \\\\：\n- \\``： - \\{：{ - \\}：}",
+    "crumbs": [
+      "Markdown 基础",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown 基本语法</span>"
+    ]
+  },
+  {
+    "objectID": "body/02-md-syntax.html#sec-md-math",
+    "href": "body/02-md-syntax.html#sec-md-math",
+    "title": "2  Markdown 基本语法",
+    "section": "2.12 数学公式",
+    "text": "2.12 数学公式\nMarkdown 支持 LaTeX 语法插入数学公式。使用 $ 包裹行内公式，$$ 包裹独立公式。\n行内公式：$E = mc^2$\n\n独立公式：\n$$\n\\int_{a}^{b} x^2 dx\n$$",
+    "crumbs": [
+      "Markdown 基础",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown 基本语法</span>"
+    ]
+  },
+  {
+    "objectID": "body/02-md-syntax.html#sec-md-extension",
+    "href": "body/02-md-syntax.html#sec-md-extension",
+    "title": "2  Markdown 基本语法",
+    "section": "2.13 扩展语法",
+    "text": "2.13 扩展语法\nMarkdown 有许多扩展语法（如 GitHub Flavored Markdown），支持更多功能： - 任务列表 - 内嵌 HTML - 脚注 - 数学公式\n我们将在后续章节中详细介绍这些扩展语法。",
+    "crumbs": [
+      "Markdown 基础",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown 基本语法</span>"
+    ]
+  },
+  {
+    "objectID": "body/02-md-syntax.html#sec-md-practice",
+    "href": "body/02-md-syntax.html#sec-md-practice",
+    "title": "2  Markdown 基本语法",
+    "section": "2.14 动手练习",
+    "text": "2.14 动手练习\n\n创建一个包含标题、段落、列表和链接的 Markdown 文档。\n尝试插入一张本地图片，并为其设置尺寸。\n使用表格整理你的一周计划，并设置对齐方式。",
+    "crumbs": [
+      "Markdown 基础",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown 基本语法</span>"
+    ]
+  },
+  {
+    "objectID": "body/ad-html-figure.html",
+    "href": "body/ad-html-figure.html",
+    "title": "3  使用 HTML 插入图片",
+    "section": "",
+    "text": "3.1 调整图片尺寸\n多数情况下，采用标准的 Markdown 语法 ![]() 插入图片即可。若需对图片的尺寸、缩放比例或布局进行更精细的控制，需要使用 HTML 的 &lt;img&gt; 标签结合 CSS 样式。",
+    "crumbs": [
+      "进阶用法",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>使用 HTML 插入图片</span>"
+    ]
+  },
+  {
+    "objectID": "body/ad-html-figure.html#调整图片尺寸",
+    "href": "body/ad-html-figure.html#调整图片尺寸",
+    "title": "3  使用 HTML 插入图片",
+    "section": "",
+    "text": "3.1.1 绝对尺寸\n使用 HTML 的 &lt;img&gt; 标签插入图片的基本语法如下：\n&lt;img  alt=\"说明文字\" style=\"width: 550px\" src=\"图片网址或文件名\"&gt;\n\nsrc()：图片的 URL 或文件路径/文件名。\nwidth: 550px：图片宽度固定为 550px 像素，高度按比例自动调整\n\n若设定 height: 300px，则宽度会按比例调整\n若设定 height: 60px; width: 30px，则高宽比为 2:1\n\n\n示例：\n&lt;img style=\"width: 30px\" src=\"https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/lianxh-logo-sq.png\"&gt;\n&lt;img style=\"height: 30px; width: 60px\" src=\"images/lianxh-logo-sq.png\"&gt;\n   \n\n\n3.1.2 相对尺寸\n&lt;img src=\"image_url\" alt=\"替代文本\" style=\"width: 50%;\"&gt;\n\n图片宽度为默认宽度的 50%，高度自动调整。\n\n\n\n3.1.3 限制最大尺寸\n&lt;img src=\"image_url\" alt=\"替代文本\" style=\"max-width: 80%; height: auto;\"&gt;\n\n图片宽度最大为默认值的 80%，高度自动调整，适合多平台展示。",
+    "crumbs": [
+      "进阶用法",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>使用 HTML 插入图片</span>"
+    ]
+  },
+  {
+    "objectID": "body/ad-html-figure.html#调整图片显示位置",
+    "href": "body/ad-html-figure.html#调整图片显示位置",
+    "title": "3  使用 HTML 插入图片",
+    "section": "3.2 调整图片显示位置",
+    "text": "3.2 调整图片显示位置\nMarkdown 本身不支持图片对齐，但可以通过 HTML 和 CSS 实现。例如，居中对齐设定如下：\n&lt;div style=\"text-align: center;\"&gt;\n    &lt;img src=\"image_url\" style=\"width: 300px;\"&gt;\n&lt;/div&gt;\n将 center 修改为 left 和 right 可以实现左对齐和右对齐。",
+    "crumbs": [
+      "进阶用法",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>使用 HTML 插入图片</span>"
+    ]
+  },
+  {
+    "objectID": "body/ad-html-figure.html#为图片添加标题",
+    "href": "body/ad-html-figure.html#为图片添加标题",
+    "title": "3  使用 HTML 插入图片",
+    "section": "3.3 为图片添加标题",
+    "text": "3.3 为图片添加标题\n&lt;figure&gt;\n    &lt;img src=\"image_url\" style=\"width: 300px;\"&gt;\n    &lt;figcaption&gt;图 1：图片标题&lt;/figcaption&gt;\n&lt;/figure&gt;",
+    "crumbs": [
+      "进阶用法",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>使用 HTML 插入图片</span>"
+    ]
+  },
+  {
+    "objectID": "body/ad-html-figure.html#为图片添加超链接",
+    "href": "body/ad-html-figure.html#为图片添加超链接",
+    "title": "3  使用 HTML 插入图片",
+    "section": "3.4 为图片添加超链接",
+    "text": "3.4 为图片添加超链接\n&lt;a href=\"https://www.lianxh.cn\"&gt;\n    &lt;img src=\"image_url\" style=\"width: 300px;\"&gt;\n&lt;/a&gt;\n  \n点击上图，会跳转到 https://www.lianxh.cn。",
+    "crumbs": [
+      "进阶用法",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>使用 HTML 插入图片</span>"
+    ]
+  },
+  {
+    "objectID": "body/ad-sougou.html",
+    "href": "body/ad-sougou.html",
+    "title": "4  搜狗短语",
+    "section": "",
+    "text": "4.1 简介\n可以将一些常用的 Markdown 短语定义成搜狗短语，以便提高输入效率。借助搜狗输入法自带的 【自定义短语配置】 功能，我们可以将一些常用的 Markdown 格式语句定义成搜狗短语，以提高输入效率。只要输入几个字母就出现一大串代码。\n下面是我在 Stata 中敲代码的样子：",
+    "crumbs": [
+      "进阶用法",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>搜狗短语</span>"
+    ]
+  },
+  {
+    "objectID": "body/ad-sougou.html#简介",
+    "href": "body/ad-sougou.html#简介",
+    "title": "4  搜狗短语",
+    "section": "",
+    "text": "Stata+搜狗自定义短语-范例：一分钟做好三张表",
+    "crumbs": [
+      "进阶用法",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>搜狗短语</span>"
+    ]
+  },
+  {
+    "objectID": "body/ad-sougou.html#定义方法",
+    "href": "body/ad-sougou.html#定义方法",
+    "title": "4  搜狗短语",
+    "section": "4.2 定义方法",
+    "text": "4.2 定义方法\n你可以在百度或知乎上搜索关键词【搜狗自定义短语】，相关教程很多，例如：输入法“自定义短语设置”还可以这么玩；搜狗输入法-自定义短语设置的神奇妙用。这里，我只做简要说明。\n\n4.2.1 基本规则\n在搜狗输入法中敲入 whn 三个字母后，会弹出如下备选词组：\n\n\n短语：就是你打字时的缩写，通常是个简单易记的英文缩写，如 whn；\n#：表示输入法中显示的序号 (如上图中，若依次在键盘上敲入 whn → 2，则会输入 我和您。)\n\n按此逻辑，如果我们预先定义如下规则：\npf,1 = [-PDF-]()\n则当你采用「搜狗输入法」打字时，只需输入 lj，屏幕上第一个显示出来的词条就是 [-PDF-]()。\n\n\n4.2.2 自定义短语配置方法\n依次点击 [属性设置 → 高级 → 自定义短语设置 → 直接编辑配置文件]，然后在打开的文本文件中添加你的配置即可。\n\n\n\n\n\n\nTip\n\n\n\n\n对于 Windows 用户而言，可以按 Win 键 (Ctrl 右侧的键)，在弹出程序列表中找到 搜狗输入法，然后依次点击 [设置 → 高级 → 自定义短语设置 → ……]\n对于 MacOS 用户，可以点击屏幕右上角的 输入法图标，选择 偏好设置，然后依次点击 [高级 → 自定义短语设置 → 直接编辑配置文件] 进行修改。\n\n\n\n\n图 Figure 4.1 呈现了具体设定过程 (细分步骤参见 Stata高效输入：搜狗输入法自定义短语)：\n\n\n\n\n\n\n\n\nFigure 4.1: 搜狗短语设定 - 打开配置文件",
+    "crumbs": [
+      "进阶用法",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>搜狗短语</span>"
+    ]
+  },
+  {
+    "objectID": "body/ad-sougou.html#sec-sogou-myphase",
+    "href": "body/ad-sougou.html#sec-sogou-myphase",
+    "title": "4  搜狗短语",
+    "section": "4.3 我的配置文件",
+    "text": "4.3 我的配置文件\n下面贴出我的部分配置文件，你只需贴入你的配置文件中，根据自己的习惯修改关键词或缩写设定即可。\nmd,1= Markdown \ngl,1=``\nlj,1=[]()\nlk,1=[-Link-]()\ntoc,1=[toc]\nkg,1=&emsp; \napple,1=&#x1F34E; \napple,2=&#x1F34F;\nmdred,1=&lt;font color=red&gt;红色文字&lt;/font&gt;\nwodefig,1=\n\n&lt;img style=\"width: 550px\" src=\"\"&gt;\n\npf,1=[-PDF-]()\nesttab,1=\n*-----回归结果-------\n  local m \"m1 m2 m3\"\n  esttab `m', nogap compress replace   ///\n         b(%6.3f) s(N r2_a)            ///\n         star(* 0.1 ** 0.05 *** 0.01)",
+    "crumbs": [
+      "进阶用法",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>搜狗短语</span>"
+    ]
+  },
+  {
+    "objectID": "body/ad-sougou.html#几个小技巧",
+    "href": "body/ad-sougou.html#几个小技巧",
+    "title": "4  搜狗短语",
+    "section": "4.4 几个小技巧",
+    "text": "4.4 几个小技巧\n\n\n\n\n\n\nTip\n\n\n\n\n快速编辑短语\n多行短语和复杂短语\n\n\n\n\n快速修改已经定义的短语。 以 Section 4.3 中定义的短语 md 为例：键入 md，把光标指向 md，即可显示如下下来菜单，按需操作即可。\n\n多行/复杂短语。 你可以把一大段文字或代码设定为一个搜狗短语，设定格式如下。注意：空行也算作短语文本的一部分。",
+    "crumbs": [
+      "进阶用法",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>搜狗短语</span>"
+    ]
+  }
+]

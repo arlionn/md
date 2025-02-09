@@ -1,0 +1,20 @@
+{
+  "index.qmd": {
+    "index.html": "5b0ff4db"
+  },
+  "body/_home.qmd": {
+    "_home.html": "49d96a8d"
+  },
+  "body/01-ex.qmd": {
+    "01-ex.html": "9d40e544"
+  },
+  "body/02-md-syntax.qmd": {
+    "02-md-syntax.html": "2a5280d6"
+  },
+  "body/ad-html-figure.qmd": {
+    "ad-html-figure.html": "c9cc11f8"
+  },
+  "body/ad-sougou.qmd": {
+    "ad-sougou.html": "9fbe7f1c"
+  }
+}

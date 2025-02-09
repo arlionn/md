@@ -1,0 +1,105 @@
+
+
+## 图片
+
+> <https://quarto.org/docs/authoring/figures.html#figure-basics>
+
+```md
+![Elephant](elephant.png)
+```
+
+
+### 图片大小 {.unnumbered}
+
+```md
+![Elephant](elephant.png){width=300}
+
+![Elephant](elephant.png){width=80%}
+
+![Elephant](elephant.png){width=4in}
+```
+
+### 图片位置 {.unnumbered}
+
+```md
+![Elephant](elephant.png){fig-align="left"}
+```
+
+点击后放大呈现的图片
+![An elephant](elephant.png){.lightbox}
+
+### 交叉引用
+
+## Cross References
+
+You can cross-reference figures by adding an ID with the `fig-` prefix to them, and then referencing the figure using the `@` prefix. For example:
+
+```
+![An Elephant](elephant.png){#fig-elephant}
+
+This is illustrated well by @fig-elephant.
+```
+
+## Subfigures
+
+If you have several figures that appear as a group, you can create a figure div to enclose them. For example:
+
+```md
+::: {#fig-elephants layout-ncol=2}
+
+![Surus](surus.png){#fig-surus}
+
+![Hanno](hanno.png){#fig-hanno}
+
+Famous Elephants
+:::
+```
+
+Again, the last paragraph provides the main caption, and the individual figures carry the sub-captions. Here is what this looks like when rendered as HTML:
+
+![An artistic rendition of Surus, Hannibal's last war elephant, is on the left. Underneath this picture is the caption '(a) Surus.' On the right is a line drawing of Hanno, a famous elephant. Underneath this picture is the caption '(b) Hanno.' The words 'Figure 1: Famous elephants' are centered beneath both pictures.](https://quarto.org/docs/authoring/images/elephant-subfigures.png)
+
+## Figure Panels
+
+Above we demonstrate laying out two side-by-side figures with subcaptions and a main caption. You may or may not want the caption / sub-caption treatment, and you might also want to use multiple rows of figures. All of these variations are possible.
+
+To layout two figures with their own standalone captions (and no main caption), just eliminate the `#fig` identifiers and main caption at the bottom:
+
+```
+::: {layout-ncol=2}
+![Surus](surus.png)
+
+![Hanno](hanno.png)
+:::
+```
+
+![An artistic rendition of Surus, Hannibal's last war elephant, is on the left. Underneath this picture is the caption 'Surus.' On the right is a line drawing of Hanno, a famous elephant. Underneath this picture is the caption 'Hanno.'](https://quarto.org/docs/authoring/images/elephant-figures-no-subcaption.png)
+
+You can also eliminate the captions entirely:
+
+```
+::: {layout-ncol=2}
+![](surus.png)
+
+![](hanno.png)
+:::
+```
+
+## 更花哨的设定
+
+## Custom Layouts
+
+The examples above used the `layout-ncol` or `layout-nrow` attributes to create straightforward layouts where all columns are of equal sizes. The `layout` attribute enables the creation of much more complex layouts.
+
+For example, this defines a layout with two equally sized figures in the first row, then another image that spans the entire second row:
+
+```
+::: {layout="[[1,1], [1]]"}
+![Surus](surus.png)
+
+![Hanno](hanno.png)
+
+![Lin Wang](lin-wang.png)
+:::
+```
+

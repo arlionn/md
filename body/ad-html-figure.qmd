@@ -1,0 +1,91 @@
+# 使用 HTML 插入图片
+
+多数情况下，采用标准的 Markdown 语法 `![]()` 插入图片即可。若需对图片的尺寸、缩放比例或布局进行更精细的控制，需要使用 HTML 的 `<img>` 标签结合 CSS 样式。
+
+
+::: {.callout-note}
+## HTML 标记符
+
+
+:::
+
+
+https://www.runoob.com/html/html-tutorial.html
+
+## 调整图片尺寸
+
+### 绝对尺寸 {.unnumbered}
+
+使用 HTML 的 `<img>` 标签插入图片的基本语法如下：
+
+```html
+<img  alt="说明文字" style="width: 550px" src="图片网址或文件名">
+```
+- `src()`：图片的 URL 或文件路径/文件名。
+- `width: 550px`：图片宽度固定为 `550px` 像素，高度按比例自动调整
+  - 若设定 `height: 300px`，则宽度会按比例调整
+  - 若设定 `height: 60px; width: 30px`，则高宽比为 2:1
+
+示例：
+
+```html
+<img style="width: 30px" src="https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/lianxh-logo-sq.png">
+```
+
+```html
+<img style="height: 30px; width: 60px" src="images/lianxh-logo-sq.png">
+```
+
+<img style="width: 30px" src="https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/lianxh-logo-sq.png"> &emsp; <img style="height: 30px; width: 60px" src="https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/lianxh-logo-sq.png">
+
+### 相对尺寸 {.unnumbered}
+
+```html
+<img src="image_url" alt="替代文本" style="width: 50%;">
+```
+- 图片宽度为默认宽度的 `50%`，高度自动调整。
+
+### 限制最大尺寸 {.unnumbered}
+
+```html
+<img src="image_url" alt="替代文本" style="max-width: 80%; height: auto;">
+```
+- 图片宽度最大为默认值的 `80%`，高度自动调整，适合多平台展示。
+
+
+## 调整图片显示位置
+
+Markdown 本身不支持图片对齐，但可以通过 HTML 和 CSS 实现。例如，居中对齐设定如下：
+
+```html
+<div style="text-align: center;">
+    <img src="image_url" style="width: 300px;">
+</div>
+```
+
+将 `center` 修改为 `left` 和 `right` 可以实现左对齐和右对齐。
+
+## 为图片添加标题
+
+```html
+<figure>
+    <img src="image_url" style="width: 300px;">
+    <figcaption>图 1：图片标题</figcaption>
+</figure>
+```
+
+## 为图片添加超链接
+```html
+<a href="https://www.lianxh.cn">
+    <img src="image_url" style="width: 300px;">
+</a>
+```
+
+<a href="https://www.lianxh.cn">
+    <img style="width: 30px" src="https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/lianxh-logo-sq.png">
+</a>
+
+点击上图，会跳转到 <https://www.lianxh.cn>。
+
+
+

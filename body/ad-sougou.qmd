@@ -1,0 +1,98 @@
+# 搜狗短语
+
+> Source：[Stata高效输入：搜狗输入法自定义短语](https://www.lianxh.cn/details/158.html), 连享会 No.158.
+
+## 简介
+
+借助搜狗输入法自带的 **【自定义短语配置】** 功能，我们可以将一些常用的 Markdown 格式语句定义成搜狗短语，以提高输入效率。
+
+下面是我在 Stata dofile 中敲代码的样子：
+
+![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/7692714-b3c68e826ffa3025.gif?imageMogr2/auto-orient/strip){width=80%}
+
+
+## 定义方法
+
+你可以在百度或知乎上搜索关键词【搜狗自定义短语】，相关教程很多，例如：[输入法“自定义短语设置”还可以这么玩](http://www.jianshu.com/p/122df638c620)；[搜狗输入法-自定义短语设置的神奇妙用](http://www.jianshu.com/p/ebc1d5e65628)。这里，我只做简要说明。
+
+### 基本规则
+
+在搜狗输入法中敲入 `whn` 三个字母后，会弹出如下备选词组：
+
+![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/20200523163645.png){width=350}
+
+- `短语`：就是你打字时的缩写，通常是个简单易记的英文缩写，如 `whn`；
+- `#`：表示输入法中显示的序号 (如上图中，若依次在键盘上敲入 `whn` &rarr; `2`，则会输入 **我和您**。)
+
+按此逻辑，如果我们预先定义如下规则：
+
+```r
+pf,1 = [-PDF-]()
+```
+
+则当你采用「搜狗输入法」打字时，只需输入 `lj`，屏幕上第一个显示出来的词条就是 ` [-PDF-]()`。
+
+### 自定义短语配置方法
+
+依次点击 [**属性设置** &rarr; **高级** &rarr; **自定义短语设置** &rarr; **直接编辑配置文件**]，然后在打开的文本文件中添加你的配置即可。 
+
+::: {.callout-tip}
+- **Windows 用户**：按 **Win 键** (**Ctrl** 右侧的键)，在程序列表中找到 `搜狗输入法`，然后依次点击 [**设置** &rarr; **高级** &rarr; **自定义短语设置** &rarr; ……]
+ 
+- **MacOS 用户**：点击屏幕右上角的 **输入法图标**，选择 **偏好设置**，然后依次点击 [**高级** &rarr; **自定义短语设置** &rarr; **直接编辑配置文件**]。  
+:::
+
+图 @fig-sougou-setting-02 呈现了具体设定过程 (详情参见 [Stata高效输入：搜狗输入法自定义短语](https://www.lianxh.cn/details/158.html))：
+
+<!-- ![搜狗 - 自定义短语设置方法](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/20200522232748.png){#fig-sougou-setting-01} -->
+
+<!-- 图 @fig-sougou-setting-02 更直观一些： -->
+
+![搜狗短语设定 - 打开配置文件](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/20250208164601.png){#fig-sougou-setting-02}
+
+
+
+## 我的配置文件 {#sec-sogou-myphase}
+
+下面贴出我的部分配置文件，大家可以酌情修改。
+
+```python
+md,1= Markdown 
+gl,1=``
+lj,1=[]()
+lk,1=[-Link-]()
+toc,1=[toc]
+kg,1=&emsp; 
+apple,1=&#x1F34E; 
+apple,2=&#x1F34F;
+mdred,1=<font color=red>红色文字</font>
+wodefig,1=
+
+<img style="width: 550px" src="">
+
+pf,1=[-PDF-]()
+esttab,1=
+*-----回归结果-------
+  local m "m1 m2 m3"
+  esttab `m', nogap compress replace   ///
+         b(%6.3f) s(N r2_a)            ///
+         star(* 0.1 ** 0.05 *** 0.01)
+
+```
+
+## 几个小技巧
+
+::: {.callout-tip appearance="simple"}
+1. 快速编辑短语
+2. 多行短语和复杂短语
+:::
+
+1. **快速修改已经定义的短语**。
+以 @sec-sogou-myphase 中定义的短语 `md` 为例：键入 **md**，把光标指向 `md`，即可显示如下下来菜单，按需操作即可。
+
+   <img style="width: 180px" src="https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/20250208165450.png">
+
+1. **多行/复杂短语**。
+你可以把一大段文字或代码设定为一个搜狗短语，设定格式如下。注意：空行也算作短语文本的一部分。
+
+   <img style="width: 500px" src="https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/20250208170245.png">

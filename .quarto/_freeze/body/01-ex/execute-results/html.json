@@ -1,0 +1,17 @@
+{
+  "hash": "8062d1d66d851a8f9ef93f45f323e2b7",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: today\nformat: \n  html:\n    code-fold: true\n---\n\n\n\n\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\n\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```\n\n::: {.cell-output-display}\n![Temperature and ozone level.](01-ex_files/figure-html/fig-airquality-1.png){#fig-airquality width=672}\n:::\n:::",
+    "supporting": [
+      "01-ex_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

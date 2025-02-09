@@ -1,0 +1,64 @@
+project:
+  type: book
+  output-dir: mdbook
+
+book:
+  title: "Markdown 指南"
+  reader-mode: true 
+  author: "连玉君"
+  date: today
+  date-format: iso
+
+  sidebar: 
+    title: "<a href='/index.html'>Markdown 指南</a>"  # !important, 否则主页链返回链接会出错
+    logo: images/lianxh-logo-sq-30.png
+    logo-href: https://book.lianxh.cn/mdbook/index.html
+    style: floating  #docked
+    search: true
+    tools:
+      - icon: house-fill
+        href: https://www.lianxh.cn
+      - icon: camera-video-fill
+        href: https://lianxh-class.cn/
+
+  page-footer:
+    center: |
+      [www.lianxh.cn](https://www.lianxh.cn)
+    right: |
+      Support: <a href="https://quarto.org/">Quarto</a>
+#  cover-image: images/cover-panda.jpg 
+  favicon: images/lianxh-logo-sq-40.png   # URL logo
+  site-url: https://book.lianxh.cn/mdbook/index.html # 主页地址, 否则点击右上角链接会乱码
+  editor: source    # 始终采用源代码模式编辑
+
+#----------------------- Chapters ---------------
+  chapters:
+
+    - index.qmd
+
+    - body/_home.qmd
+
+    - part: "Markdown 基础"
+      chapters: 
+        - body/01-ex.qmd
+        - body/02-md-syntax.qmd
+#        - body/B2a-Stata工作流程.qmd
+#
+    - part: "进阶用法"
+      chapters: 
+        - body/ad-html-figure.qmd
+        - body/ad-sougou.qmd
+
+format:
+  html:
+    toc: true
+    toc-depth: 4  # 三级以上 sections 才伸缩
+    theme:
+      light: cosmo
+#      dark: [darkly, theme-dark.scss]
+    linestretch: 1.7          # 行间距      
+    fontsize: 11.5pt          # 字号
+    number-sections: true #false    # 禁用自动章节编号
+    link-external-newwindow: true
+
+editor: visual
